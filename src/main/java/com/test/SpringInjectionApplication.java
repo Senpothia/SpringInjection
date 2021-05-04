@@ -8,6 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import com.test.logique.Metier;
 import com.test.model.Personne;
+import com.test.model.Tache;
 import com.test.model.Voiture;
 
 @SpringBootApplication
@@ -24,6 +25,8 @@ public static Metier metier;
 		v.rouler();
 		Metier  metier = contexte.getBean(Metier.class);
 		metier.action();
+		Tache tache = contexte.getBean(Tache.class);
+		tache.run();
 		
 	}
 

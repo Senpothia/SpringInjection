@@ -43,6 +43,11 @@ public class Voiture {
 		System.out.println("La voiture roule");
 		System.out.println("Le propriétaire est: " + this.proprietaire.getNom());
 	}
+	public void reparer() {
+		
+		System.out.println("Je répare la voiture");
+		
+	}
 	
 	
 
